@@ -57,6 +57,14 @@
 p.ex1 {
     padding: 20px;
     font-size: 30px;
+    
+}
+input[type="submit"] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
 }
 </style>
     <center>
@@ -65,7 +73,7 @@ p.ex1 {
   <p class = "ex1">Name: <input type="text" placeholder="Name" name="name"><br></p>
   <p class = "ex1">User ID: <input type="text" placeholder="Unique User ID" name="userID"><br></p>
   <p class = "ex1">Password: <input type="password" placeholder="Password" name="userPassword"><br></p>
-  <p class = "ex1"><input type="submit" name="submit"></p>
+  <p class = "ex2"><input type="submit" name="submit">  </p>
  </form>
  <p><?php echo htmlentities($unsuccessfulRegis); ?></p>
     

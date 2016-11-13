@@ -51,6 +51,13 @@ p.ex1 {
     text-align: center;
 
 }
+input[type="submit"] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
 </style>
 <body>
  <form method="POST" action="login.php">
