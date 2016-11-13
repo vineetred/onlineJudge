@@ -49,19 +49,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Register</title>
+ <meta charset="UTF-8">
+ <title>Register</title>
 </head>
 <body>
-	<form method="POST" action="register.php">
-		Name: <input type="text" placeholder="Name" name="name"><br>
-		User ID: <input type="text" placeholder="Unique User ID" name="userID"><br>
-		Password: <input type="password" name="userPassword"><br>
-		<input type="submit" name="submit">
-	</form>
-	<p><?php echo htmlentities($unsuccessfulRegis); ?></p>
+<style>
+p.ex1 {
+    padding: 20px;
+    font-size: 30px;
+}
+</style>
+    <center>
+ <form method="POST" action="register.php">
+
+  <p class = "ex1">Name: <input type="text" placeholder="Name" name="name"><br></p>
+  <p class = "ex1">User ID: <input type="text" placeholder="Unique User ID" name="userID"><br></p>
+  <p class = "ex1">Password: <input type="password" placeholder="Password" name="userPassword"><br></p>
+  <p class = "ex1"><input type="submit" name="submit"></p>
+ </form>
+ <p><?php echo htmlentities($unsuccessfulRegis); ?></p>
+    
+    </center>
+
 </body>
 <?php
-	mysqli_close($conn);
+ mysqli_close($conn);
 ?>
 </html>
